@@ -10,7 +10,7 @@ https://help.synerise.com/developers/inserts/insert-usage/
 
 
 
-### How to instal this snippets into VS Code
+### How to install this snippets into VS Code
 Depending on your OS, follow the instructions provided by VSC
 https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets
 
