@@ -1,0 +1,103 @@
+{
+  "Console.log a variable": {
+    "scope": "javascript,typescript",
+    "prefix": "log",
+    "body": ["console.log($1);"],
+    "description": "Log output to console"
+  },
+
+  "Syne form data": {
+    "scope": "javascript,typescript",
+    "prefix": "snrFormData",
+    "body": [
+      "  SR.event.sendFormData(",
+      "        '${1:formName}',",
+      "        {",
+      "        //form data",
+
+      "        name: dispatchData.pop().Name,",
+      "        company: generalData.CommercialName,",
+      "        city: generalData.Town,",
+      "        email: useremail,",
+      "        phone: generalData.Phone,",
+      "        province: generalData.TerritoryDivision",
+      "        },",
+      "        {",
+      "        //field mapping",
+      "        lastname: 'surname',",
+      "        firstname: 'name',",
+      "        email: 'email',",
+      "        phone: 'phone',",
+      "        city: 'city',",
+      "        company: 'company',",
+      "        province: 'province'",
+      "        }",
+      "  );"
+    ],
+    "description": "Log output to console"
+  },
+  "Synerise Sentry": {
+    "scope": "javascript,typescript",
+    "prefix": "snrerror",
+    "body": [
+		"SR.event.trackCustomEvent('error.log', {",
+		"   name: error.name,",
+		"   message: error.message,",
+		"   campaignId: '${1:dynamicContentID}'",
+		"}, error.name);",
+    ],
+    "description": "Log output to console"
+  },
+  "Synerise social": {
+    "scope": "javascript,typescript, html",
+    "prefix": "socialproof",
+    "body": [ 
+		"{% socialproof %} ${1:expresionHash} {% endsocialproof %}"
+    ],
+    "description": "SocialProof Synerise"
+  },
+  "Synerise expression": {
+    "scope": "javascript,typescript, html",
+    "prefix": "expression",
+    "body": [
+		"{% expression %} ${1:expresionHash} {% endexpression %}"
+    ],
+    "description": "Expresion Synerise"
+  },
+  "Synerise aggregate": {
+    "scope": "javascript,typescript, html",
+    "prefix": "aggregate",
+    "body": [
+		"{% aggregate ${1:aggregateHash} %}",
+    "   {{ aggregate_result[0] }}",
+    "{% endaggregate %}"
+    ],
+    "description": "Aggregate Synerise"
+  },
+  "Synerise aggregate2": {
+    "scope": "javascript,typescript, html",
+    "prefix": "aggregate",
+    "body": [
+      "{% aggregate ${1:aggregateHash} %}",
+        "{% for item in aggregate_result %}",
+         "{{ item }}",
+        "{% endfor %}",
+      "{% endaggregate %}"
+    ],
+    "description": "Aggregate Synerise loop"
+  },
+  "Recommendations3": {
+    "scope": "javascript,typescript, html",
+    "prefix": "recommedndations3",
+    "body": [
+    "  {% recommendations3 campaignId=${1:recoId} %}",
+    "  {% for p in recommended_products3 %}",
+    "         {{ p }}",
+    "  {% endfor %}",
+     " {% endrecommendations3 %}"
+    ],
+    "description": "Synerise recommendations 3 loop"
+  }
+}
+
+
