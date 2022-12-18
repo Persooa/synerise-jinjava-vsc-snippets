@@ -1,8 +1,16 @@
 # synerise-jinjava-vsc-snippets
-Synerise Jinjava  - snipets to VSC 
+
+Small pack of basic Synerise Jinjava inserts as snippets to VSCode
 
 
-# Synerise jinjava usage documentation
+### Synerise jinjava inserts documentation
 
-# How to instal this snippets into VS Code
+About Synerise Jinjava inserts:
+https://help.synerise.com/developers/inserts/insert-usage/
+
+
+
+### How to instal this snippets into VS Code
+Depending on your OS, follow the instructions provided by VSC
+https://code.visualstudio.com/docs/editor/userdefinedsnippets#_create-your-own-snippets
 
