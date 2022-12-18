@@ -1,11 +1,4 @@
 {
-  "Console.log a variable": {
-    "scope": "javascript,typescript",
-    "prefix": "log",
-    "body": ["console.log($1);"],
-    "description": "Log output to console"
-  },
-
   "Syne form data": {
     "scope": "javascript,typescript",
     "prefix": "snrFormData",
