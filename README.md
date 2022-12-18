@@ -1,6 +1,6 @@
 # synerise-jinjava-vsc-snippets
 
-Small pack of basic Synerise Jinjava inserts as snippets to VSCode
+Small pack of basic Synerise Jinjava inserts as snippets for VSCode
 
 
 ### Synerise jinjava inserts documentation
